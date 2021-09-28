@@ -1,7 +1,4 @@
-import math.beeHouse
-import math.breakEventPoint
-import math.findFraction
-import math.snail
+import math.*
 import string.*
 import java.io.BufferedReader
 import java.io.BufferedWriter
@@ -13,10 +10,7 @@ fun main(args: Array<String>) {
     val br = BufferedReader(InputStreamReader(System.`in`))
     val bw = BufferedWriter(OutputStreamWriter(System.out))
 
-    val input = br.readLine()
-    val token = StringTokenizer(input)
-
-    bw.write(snail(token.nextToken().toInt(), token.nextToken().toInt(), token.nextToken().toInt()))
+    hotel(br, bw)
 
     br.close()
     bw.flush()
